@@ -31,13 +31,13 @@ local function startSprint()
 end
 
 UIS.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.9 and not isRunning then
+	if input.KeyCode == Enum.KeyCode.Nine and not isRunning then
 		startSprint()
 	end
 end)
 
 UIS.InputEnded:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.9 and isRunning then
+	if input.KeyCode == Enum.KeyCode.Nine and isRunning then
 		stopSprint()
 	end
 end)
